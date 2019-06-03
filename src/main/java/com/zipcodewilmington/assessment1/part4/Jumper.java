@@ -7,10 +7,7 @@ public class Jumper {
      */
     public int jumps(int flagHeight, int jumpHeight) {
         int counter = 0;
-        if ()
-
-
-            for (int i = 0; i < flagHeight; i += jumpHeight){
+        for (int i = 0; i < flagHeight; i += jumpHeight){
             counter++;
         }
 

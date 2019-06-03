@@ -10,7 +10,7 @@ public abstract class Pet implements Animal {
      */
     public String name;
     public Integer age;
-    public String newPetOwner;
+    public String owner;
 
     public Pet() {
     }

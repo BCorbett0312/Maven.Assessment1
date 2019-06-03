@@ -36,7 +36,7 @@ public class Cat extends Pet {
     public Cat() {
         super.name = "Cat name";
         super.age = 0;
-        super.newPetOwner = null;
+        super.owner = null;
     }
 
     /**

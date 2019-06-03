@@ -10,7 +10,7 @@ public abstract class Pet implements Animal {
      */
     private String name;
     private Integer age;
-    private String newPetOwner = null;
+    private String newPetOwner;
 
     public Pet() {
     }
@@ -20,6 +20,8 @@ public abstract class Pet implements Animal {
      */
     public Pet(String name) {
         this.name = name;
+        this.age = Integer.MAX_VALUE;
+
     }
 
 
@@ -28,6 +30,7 @@ public abstract class Pet implements Animal {
      */
     public Pet(int age) {
         this.age=age;
+        this.name = "";
 
     }
 

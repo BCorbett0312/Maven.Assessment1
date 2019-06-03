@@ -1,5 +1,9 @@
 package com.zipcodewilmington.assessment1.part1;
 
+
+import java.lang.*;
+
+
 /**
  * Created by leon on 2/16/18.
  */
@@ -18,15 +22,27 @@ public class BasicStringUtils {
      * @return string with identical contents, in the reverse order
      */
     public static String reverse(String str) {
-        return null;
+        StringBuilder reversed = new StringBuilder();
+        reversed.append(str);
+        reversed = reversed.reverse();
+        return reversed.toString();
     }
+
+
+
+
+
+
 
     /**
      * @param str string input from client
      * @return string with identical contents, in reverse order, with first character capitalized
      */
     public static String reverseThenCamelCase(String str) {
-        return null;
+
+        String reversed = reverse(str);
+        String revAndCap = camelCase(reversed);
+        return revAndCap;
     }
 
 

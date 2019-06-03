@@ -11,10 +11,12 @@ public class PetOwner {
      * @param pets array of Pet object
      */
     public String name;
-    public ArrayList<String> petList;
+    public Pet[] petList;
+    public Integer numberOfPets;
 
     public PetOwner(String name, Pet... pets) {
         this.name = name;
+        this.petList= pets;
 
     }
 
@@ -22,6 +24,8 @@ public class PetOwner {
      * @param pet pet to be added to the composite collection of Pets
      */
     public void addPet(Pet pet) {
+
+
     }
 
     /**
@@ -68,7 +72,7 @@ public class PetOwner {
      * @return the number of Pet objects stored in this class
      */
     public Integer getNumberOfPets() {
-        return null;
+        return numberOfPets;
     }
 
     /**
@@ -82,6 +86,6 @@ public class PetOwner {
      * @return array representation of animals owned by this PetOwner
      */
     public Pet[] getPets() {
-        return null;
+        return petList;
     }
 }

@@ -11,6 +11,7 @@ public class Jumper {
             counter++;
         }
 
+
         return counter;
     }
 }

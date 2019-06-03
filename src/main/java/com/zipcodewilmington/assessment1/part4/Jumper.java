@@ -5,7 +5,15 @@ public class Jumper {
     /*
      * Complete the function below.
      */
-    public int jumps(int k, int j) {
-        return -1;
+    public int jumps(int flagHeight, int jumpHeight) {
+        int counter = 0;
+        if ()
+
+
+            for (int i = 0; i < flagHeight; i += jumpHeight){
+            counter++;
+        }
+
+        return counter;
     }
 }

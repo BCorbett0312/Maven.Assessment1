@@ -12,7 +12,7 @@ public class PetOwner {
      */
     public String name;
     public Pet[] petList;
-    public Integer numberOfPets;
+
 
     public PetOwner(String name, Pet... pets) {
         this.name = name;
@@ -40,6 +40,8 @@ public class PetOwner {
      * @return true if I own this pet
      */
     public Boolean isOwnerOf(Pet pet) {
+
+
         return null;
     }
 
@@ -72,7 +74,7 @@ public class PetOwner {
      * @return the number of Pet objects stored in this class
      */
     public Integer getNumberOfPets() {
-        return numberOfPets;
+        return petList.length;
     }
 
     /**

@@ -20,14 +20,14 @@ public class Dog extends Pet {
      * @param age age of this dog
      */
     public Dog(Integer age) {super(age);
-
-
+    super.name = "Dog name";
     }
 
     /**
      * @param name name of this dog
      */
     public Dog(String name) {super(name);
+    super.age = 0;
 
     }
 
@@ -38,7 +38,9 @@ public class Dog extends Pet {
      * age is 0
      */
     public Dog() {
-
+    super.name = "Dog name";
+    super.age = 0;
+    super.newPetOwner = null;
     }
 
     /**

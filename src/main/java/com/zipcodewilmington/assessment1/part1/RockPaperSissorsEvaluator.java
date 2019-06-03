@@ -13,7 +13,22 @@ public class RockPaperSissorsEvaluator {
      * @return the respective winning move
      */
     public String getWinningMove(String handSign) {
-        return null;
+        String winner = "";
+        switch (handSign){
+
+            case "rock":
+                winner = "paper";
+                break;
+            case "paper":
+                winner =  "scissor";
+                break;
+            case "scissor":
+                winner =  "rock";
+                break;
+        }
+
+
+        return winner;
     }
 
     /**
@@ -21,7 +36,22 @@ public class RockPaperSissorsEvaluator {
      * @return the respective losing move
      */
     public String getLosingMove(String handSign) {
-        return null;
+        String loser = "";
+        switch (handSign) {
+
+            case "rock":
+                loser = "scissor";
+                break;
+            case "paper":
+                loser = "rock";
+                break;
+            case "scissor":
+                loser = "paper";
+                break;
+
+
+        }
+        return loser;
     }
 
     /**
@@ -30,6 +60,15 @@ public class RockPaperSissorsEvaluator {
      * @return a string representative of the winning hand sign between the two players
      */
     public String getWinner(String handSignOfPlayer1, String handSignOfPlayer2) {
-        return null;
+        getWinningMove(handSignOfPlayer1);
+
+        if (handSignOfPlayer1.contains(getWinningMove(handSignOfPlayer2))) {
+            return handSignOfPlayer1;
+        }
+        else if(handSignOfPlayer2.contains(getWinningMove(handSignOfPlayer1))){
+            return handSignOfPlayer2;
+        }
+        else {return "tie";}
+
     }
 }

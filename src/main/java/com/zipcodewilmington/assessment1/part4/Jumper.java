@@ -6,12 +6,9 @@ public class Jumper {
      * Complete the function below.
      */
     public int jumps(int flagHeight, int jumpHeight) {
-        int counter = 0;
-        for (int i = 0; i < flagHeight; i += jumpHeight){
-            counter++;
-        }
-
-
-        return counter;
+        int dividedBy = flagHeight/jumpHeight;
+        int remainderOf = flagHeight%jumpHeight;
+        int answer = dividedBy+remainderOf;
+        return answer;
     }
 }

@@ -29,7 +29,7 @@ public class IntegerUtils {
             return 1;
         }
         for (int i = 1; i <= n; i++) {
-            factorial = factorial * i;
+            factorial *= i;
         }
 
 
@@ -42,9 +42,6 @@ public class IntegerUtils {
      */
     public static Integer reverseDigits(Integer val) {
         String reversed = BasicStringUtils.reverse(val.toString());
-
-        Integer reverseNum = Integer.parseInt(reversed);
-
-        return reverseNum;
+        return Integer.parseInt(reversed);
     }
 }

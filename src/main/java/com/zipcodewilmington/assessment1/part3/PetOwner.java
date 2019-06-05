@@ -1,6 +1,6 @@
 package com.zipcodewilmington.assessment1.part3;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

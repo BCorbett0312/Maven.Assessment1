@@ -13,8 +13,7 @@ public class BasicStringUtils {
      * @return string with identical content, and the first character capitalized
      */
     public static String camelCase(String str) {
-        String upperCase = str.substring(0,1).toUpperCase() + str.substring(1);
-        return upperCase;
+        return str.substring(0,1).toUpperCase() + str.substring(1);
     }
 
     /**
@@ -22,10 +21,9 @@ public class BasicStringUtils {
      * @return string with identical contents, in the reverse order
      */
     public static String reverse(String str) {
-        StringBuilder reversed = new StringBuilder();
-        reversed.append(str);
-        reversed = reversed.reverse();
-        return reversed.toString();
+        StringBuilder toReverse = new StringBuilder();
+        toReverse.append(str);
+        return toReverse.reverse().toString();
     }
 
 
@@ -41,8 +39,7 @@ public class BasicStringUtils {
     public static String reverseThenCamelCase(String str) {
 
         String reversed = reverse(str);
-        String revAndCap = camelCase(reversed);
-        return revAndCap;
+        return camelCase(reversed);
     }
 
 
@@ -73,10 +70,6 @@ public class BasicStringUtils {
                 invertCasing[i] = Character.toUpperCase(change);
             }
         }
-
-
-
-
         return new String(invertCasing);
     }
 }

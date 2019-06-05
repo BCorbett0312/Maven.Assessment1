@@ -16,14 +16,14 @@ public class RockPaperSissorsEvaluator {
         String winner = "";
         switch (handSign){
 
-            case "rock":
-                winner = "paper";
+            case ROCK:
+                winner = PAPER;
                 break;
-            case "paper":
-                winner =  "scissor";
+            case PAPER:
+                winner =  SCISSOR;
                 break;
-            case "scissor":
-                winner =  "rock";
+            case SCISSOR:
+                winner =  ROCK;
                 break;
         }
 
@@ -39,14 +39,14 @@ public class RockPaperSissorsEvaluator {
         String loser = "";
         switch (handSign) {
 
-            case "rock":
-                loser = "scissor";
+            case ROCK:
+                loser = SCISSOR;
                 break;
-            case "paper":
-                loser = "rock";
+            case PAPER:
+                loser = ROCK;
                 break;
-            case "scissor":
-                loser = "paper";
+            case SCISSOR:
+                loser = PAPER;
                 break;
 
 
@@ -60,8 +60,6 @@ public class RockPaperSissorsEvaluator {
      * @return a string representative of the winning hand sign between the two players
      */
     public String getWinner(String handSignOfPlayer1, String handSignOfPlayer2) {
-        getWinningMove(handSignOfPlayer1);
-
         if (handSignOfPlayer1.contains(getWinningMove(handSignOfPlayer2))) {
             return handSignOfPlayer1;
         }

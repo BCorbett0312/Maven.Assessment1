@@ -16,11 +16,7 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return an array of strings, each element representative of a respective word in the sentence
      */
     public static String[] getWords(String sentence) {
-        String[] splitUp = sentence.split(" ");
-
-
-
-        return splitUp;
+        return null;
     }
 
 
@@ -30,9 +26,7 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word of the sentence
      */
     public static String getFirstWord(String sentence) {
-        String firstWord = getWords(sentence)[0];
-
-        return firstWord;
+        return null;
     }
 
     /**
@@ -41,10 +35,7 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order
      */
     public static String reverseFirstWord(String sentence) {
-        String toBeReversed = getFirstWord(sentence);
-        toBeReversed = BasicStringUtils.reverse(toBeReversed);
-
-        return toBeReversed;
+        return null;
     }
 
     /**
@@ -53,10 +44,7 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order with the first character capitalized
      */
     public static String reverseFirstWordThenCamelCase(String sentence) {
-        String toBeCamelAndReverse = reverseFirstWord(sentence);
-        toBeCamelAndReverse = BasicStringUtils.camelCase(toBeCamelAndReverse);
-
-        return toBeCamelAndReverse;
+        return null;
     }
 
 
@@ -67,9 +55,7 @@ public class StringUtils {
      * given a string and index, return an identical string excluding the character at the specified index
      */
     public static String removeCharacterAtIndex(String str, int index) {
-        //String[] splitUp = str.split("");
-        String removeChar = str.substring(0, index) + str.substring(index+1);
-        return removeChar;
+        return null;
     }
 
 }

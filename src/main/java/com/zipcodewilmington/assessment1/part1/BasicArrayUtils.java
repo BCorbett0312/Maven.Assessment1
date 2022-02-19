@@ -9,7 +9,7 @@ public class BasicArrayUtils {
      * @return the first element in the array
      */
     public static String getFirstElement(String[] stringArray) {
-        return stringArray[0];
+        return null;
     }
 
     /**
@@ -17,7 +17,7 @@ public class BasicArrayUtils {
      * @return the second element in the array
      */
     public static String getSecondElement(String[] stringArray) {
-         return stringArray[1];
+        return null;
     }
 
     /**
